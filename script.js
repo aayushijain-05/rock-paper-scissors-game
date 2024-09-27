@@ -28,11 +28,11 @@ function playMatch(){
                 //call compare hads function
                 computerHands(this.textContent, computerChoice);
                 
-                playerHand.src = `./assets/${this.textContent}.png`;
-                computerHand.src = `./assets/${computerChoice}.png`;
+                playerHand.src = `./img/${this.textContent}.png`;
+                computerHand.src = `./img/${computerChoice}.png`;
             }, 2000);
 
-            //Working on animation
+           
             playerHand.style.animation = 'shakePlayer 2s ease';
             computerHand.style.animation = 'shakeComputer 2s ease';
         });
